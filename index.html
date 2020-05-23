@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>Summer's To-Do List</h1>
+    <form>
+        <input type="text" class="ToDo-input"/>
+        <button class="ToDo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name = "todos" class="filterToDos">
+             <option value="all">All</option>
+             <option value="uncompleted">Uncompleted</option>
+             <option value="completed">Completed</option>
+            </select>
+        </div>
+    </form>
+    <div class="ToDo-Container">
+        <ul class="ToDo-List"></ul>
+    </div>
+
+    <script src = "./app.js"></script>
+</body>
+</html>

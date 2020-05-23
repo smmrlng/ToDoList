@@ -1,0 +1,106 @@
+body{
+    background-color :#d9fd8c;
+}
+H1 {
+        color : #FF85C4; 
+        font-size:200%;
+        text-align:center;
+        Font-family: Impact;
+}  
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,
+form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none:
+    background-color:white;
+}
+form button{
+    color: #FF85C4;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    color: white;
+    background-color: #FF85C4;
+}
+.ToDo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ToDo-List {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    list-style: none ;
+}
+.ToDo {
+    margin: .5rem;
+    background-color: white;
+    color: turquoise;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ToDo li {
+    flex: 1;
+}
+.DeleteBtn,
+.DoneBtn{
+    background-color: #FF85C4;
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.DoneBtn{
+    background-color: cornflowerblue;
+}
+.fa-trash,
+.fa-check-square{
+    pointer-events: none;
+}
+.Completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select{
+    color: #FF85C4;
+    padding: 1rem;
+    cursor: pointer;
+    width: 10rem;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: #FF85C4;
+    color: white;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+}
+.select:hover::after{
+    background-color: white;
+    color: #FF85C4;
+}
